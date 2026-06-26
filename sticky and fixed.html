@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin:0;
+}
+
+#c{
+    height:60px;
+    width:100%;
+    background:red;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+#C1{
+    height:60px;
+    width:100%;
+    background:red;
+    position:sticky;
+    top:60px;
+    z-index:999;
+}
+
+.gallery{
+    text-align:center;
+    margin-top:80px;
+}
+
+.C,.B{
+    display:inline-block;
+}
+
+img{
+    height:250px;
+    width:250px;
+    border:1px solid black;
+    margin:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="c"></div>
+
+<div class="gallery">
+    <div class="C"><img src="d3.jpg"></div>
+    <div class="C"><img src="d3.jpg"></div>
+    <div class="C"><img src="d4.jpg"></div>
+    <br>
+
+    <div class="C"><img src="d5.jpg"></div>
+    <div class="C"><img src="d6.jpg"></div>
+    <div class="C"><img src="d7.jpg"></div>
+</div>
+
+<div id="C1"></div>
+
+<div class="gallery">
+    <div class="B"><img src="d3.jpg"></div>
+    <div class="B"><img src="d3.jpg"></div>
+    <div class="B"><img src="d4.jpg"></div>
+    <br>
+
+    <div class="B"><img src="d5.jpg"></div>
+    <div class="B"><img src="d6.jpg"></div>
+    <div class="B"><img src="d7.jpg"></div>
+</div>
+
+</body>
+</html>
